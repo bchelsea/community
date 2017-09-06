@@ -13,7 +13,6 @@ import MainPage from '../MainPage/MainPage.js';
 
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,8 +22,6 @@ class App extends Component {
     return {
 
     }
-
- 
 
   }
 

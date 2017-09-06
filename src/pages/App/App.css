@@ -1,0 +1,16 @@
+.header-footer {
+  background-color: gray;
+  height: 200px;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 6px;
+  margin: 50px;
+}
+
+
+.fb-login-button {
+  background-color: red;
+  float: right;
+}

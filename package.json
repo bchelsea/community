@@ -1,0 +1,26 @@
+{
+  "name": "community",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "google-maps-react": "^1.1.0",
+    "mongoose": "^4.11.10",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-responsive-carousel": "^3.1.25",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "serve-favicon": "^2.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

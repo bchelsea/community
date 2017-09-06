@@ -1,0 +1,10 @@
+.TopicItem {
+    list-style-type: none;
+    text-align: left;
+}
+
+.TopicBox {
+    background-color: gray;
+    /* margin: 10px; */
+    border: 1px solid black
+}

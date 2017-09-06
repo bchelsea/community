@@ -1,10 +1,16 @@
 .TopicItem {
     list-style-type: none;
     text-align: left;
+    display: block;
+    float: left;
 }
 
 .TopicBox {
     background-color: gray;
     /* margin: 10px; */
     border: 1px solid black
+}
+
+.pre-scrollable {
+    text-align: center;
 }

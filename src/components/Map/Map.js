@@ -3,28 +3,32 @@ import {Map, GoogleApiWrapper} from 'google-maps-react';
 import './Map.css';
 
 export class MapContainer extends Component {
-
-
-
-
-
-
-
-
+  constructor(props) {
+    super(props);
+    this.state = {
+    }
+  }
+   
+  style = {
+    width: '25%',
+    height: '25%',
+  
+  }
 
   render() {
       return (
+      <div className='Map-Box'>
         <Map
         style={this.style}
-        className='Map'
         google={this.props.google}
-        zoom={14}
+        zoom={12}
         initialCenter={{
             lat: 33.979179,
             lng: -118.032844
           }}
         >
         </Map>
+      </div>
       );
     }
   }

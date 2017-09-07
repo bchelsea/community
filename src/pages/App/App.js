@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from 'react-router-dom';
 import './App.css';
 import ProfilePage from '../ProfilePage/ProfilePage.js';
@@ -54,9 +55,6 @@ componentDidMount() {
   render() {
     return (
       <div>
-        <header className='header-footer'> 
-          --- Community Header ---- 
-        </header>
         <Router>
           <Switch>
             <Route exact path='/' render={() =>

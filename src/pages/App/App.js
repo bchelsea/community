@@ -59,7 +59,6 @@ componentDidMount() {
           <Switch>
             <Route exact path='/' render={() =>
               <MainPage 
-              
               />
             } />
             <Route exact path='/profile' render={() =>

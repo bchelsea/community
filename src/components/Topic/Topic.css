@@ -10,9 +10,10 @@
     text-decoration: underline;
 }
 .TopicBox {
-    background-color: gray;
+    background-color: lightblue;
     margin: 10px;
-    border: 1px solid black
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 .pre-scrollable {

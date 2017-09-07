@@ -7,7 +7,7 @@ const  EventsList = (props) => {
     return (
         <div className='EventsList'>
             <h3> Events Lists </h3>
-        <Event />  EVENT ONE
+        <Event />  < br/> EVENT ONE
         -----
         <Event /> EVENT TWO
         -----

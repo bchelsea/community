@@ -18,6 +18,7 @@ export class MapContainer extends Component {
   render() {
       return (
       <div className='Map-Box'>
+        <h4> City Map </h4>
         <Map
         style={this.style}
         google={this.props.google}

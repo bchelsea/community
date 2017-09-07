@@ -51,10 +51,19 @@ componentDidMount() {
   render() {
     return (
       <div>
+        <div className='titleBackground'>
+        <h1 className='title'>
+          Community 
+        </h1>
+        <h2 className='title'>
+        a place for neihbors. 
+        </h2>
+        </div>
           <NavBar 
             user={this.state.user}
             handleLogout={this.handleLogout}
           />
+          
           <Switch>
             <Route exact path='/' render={() =>
               <MainPage 

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Discussions.css';
-
 import NewDiscussion from '../NewDiscussion/NewDiscussion.js';
 
 

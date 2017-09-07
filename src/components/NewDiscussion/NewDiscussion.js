@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import tokenService from '../../utils/tokenService';
 
 
-
 class NewDiscussion extends Component {
   constructor() {
     super();
@@ -21,16 +20,7 @@ class NewDiscussion extends Component {
 
   submitDiscussion = (e) => {
     e.preventDefault();
-
-    // fetch(BASE_URL + 'login', {
-    //   method: 'POST',
-    //   headers: new Headers({'Content-Type': 'application/json'}),
-    //   body: JSON.stringify(creds)
-    // })
-
-
-
-    fetch('/api/discussions', {
+      fetch('/api/discussions', {
       method: 'POST',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -44,6 +34,7 @@ class NewDiscussion extends Component {
     })
     .then(discussion => {
       console.log(discussion);
+      
       // call a method that was passed via props that
       // lives where the state.discussions array lives
     });
@@ -74,7 +65,7 @@ class NewDiscussion extends Component {
 
           <div className="form-group">
             <label htmlFor="exampleTextarea">What's Happening?</label><br/>
-            <textarea className="form-control" id="exampleTextarea" rows="7" value={this.state.content} onChange={(e) => this.updateInput('title', e)}></textarea>
+            <textarea className="form-control" id="exampleTextarea" rows="7" value={this.state.content} onChange={(e) => this.updateInput('content', e)}></textarea>
           </div>
           <button className="btn btn-primary" onClick={this.submitDiscussion}>Submit</button>
         </form>

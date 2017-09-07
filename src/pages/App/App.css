@@ -10,7 +10,15 @@
 }
 
 
-.fb-login-button {
-  background-color: red;
+
+
+.titleBackground {
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 100px;
+  width: 300px;
+  height: 100px;
   float: right;
 }
+
+

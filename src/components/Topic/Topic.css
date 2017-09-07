@@ -12,12 +12,23 @@
 .TopicBox {
     background-color: white;
     margin: 10px;
+    margin-left: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px #888888;
 }
 
 .pre-scrollable {
     text-align: center;
-    padding: 0;
+    font-size: 12px;
+    padding: 2px;
+    width: 150px;
 }
 
+h5 {
+    margin-left: 18px;
+    color: navy;
+    font-size: 15px;
+    width: 145px;
+    box-shadow: 5px 5px 5px #888888;
+    text-align: center;
+}

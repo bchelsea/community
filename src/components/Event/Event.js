@@ -3,9 +3,10 @@ import './Event.css';
 
 const Event = (props) => {
     let style = {
-        width: 100,
-        height: 100,
+        width: 300,
+        height: 300,
         border: '1px solid black',
+        margin: 'auto'
     };
 
     return (

@@ -5,12 +5,12 @@ import './Topic.css';
 const TopicBox = (props) => {
     let style = {
         display: 'flex',
-        width: 100,
+        width: 150,
         height: 200,
     };
     return (
     <div>
-            <h6> Community Topics</h6>
+            <h5> Community Topics</h5>
             <div
             className='TopicBox' 
             style={style}
@@ -22,12 +22,9 @@ const TopicBox = (props) => {
                     <li className='TopicItem'> Crime</li>
                     <li className='TopicItem'> Moving to Whittier</li>
                     <li className='TopicItem'> Community Events</li>
-                    <li className='TopicItem'> Eat and Drink</li>
+                    <li className='TopicItem'> Good Eats</li>
                     <li className='TopicItem'> High Schools</li>
-                    <li className='TopicItem'> topic 1</li>
-                    <li className='TopicItem'> topic 1</li>
-                    <li className='TopicItem'> topic 1</li>
-                    <li className='TopicItem'> topic 1</li>
+                    <li className='TopicItem'> Random</li>
                 </ul>
             </div>
     </div>

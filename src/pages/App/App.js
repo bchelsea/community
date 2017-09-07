@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
 } from 'react-router-dom';
 import './App.css';
+import NavBar from '../../components/NavBar/NavBar';
 import ProfilePage from '../ProfilePage/ProfilePage.js';
 import ResourcesPage from '../ResourcesPage/ResourcesPage.js';
 // import {Link} from 'react-router-dom';
@@ -18,28 +17,25 @@ import userService from '../../utils/userService';
 class App extends Component {
   constructor(props) {
     super(props);
-  }
-
-  getInitialState() {
-    return {
+    this.state = {
+      user: null
     }
   }
 
-
-
+// login stuff // 
 
   handleLogout = () => {
     userService.logout();
     this.setState({user: null});
-    }
+  }
   
-    handleSignup = () => {
-      this.setState({user: userService.getUser()});
-    }
-  
-    handleLogin = () => {
-      this.setState({user: userService.getUser()});
-    }
+  handleSignup = () => {
+    this.setState({user: userService.getUser()});
+  }
+
+  handleLogin = () => {
+    this.setState({user: userService.getUser()});
+  }
   
 
 
@@ -55,7 +51,10 @@ componentDidMount() {
   render() {
     return (
       <div>
-        <Router>
+          <NavBar 
+            user={this.state.user}
+            handleLogout={this.handleLogout}
+          />
           <Switch>
             <Route exact path='/' render={() =>
               <MainPage 
@@ -82,7 +81,6 @@ componentDidMount() {
               />
             }/>
           </Switch>
-        </Router>
         
       </div>
     );

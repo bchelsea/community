@@ -16,7 +16,7 @@ const TopicBox = (props) => {
             style={style}
             >
                 <ul className="pre-scrollable"> 
-                    <li className='TopicItem'><a href="#">Garage Sales</a></li>
+                    <li className='TopicItem'><a href="">Garage Sales</a></li>
                     <li className='TopicItem'> Lost and Found</li>
                     <li className='TopicItem'> Neighborhood Watch</li>
                     <li className='TopicItem'> Crime</li>

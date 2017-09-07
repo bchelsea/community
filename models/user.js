@@ -8,18 +8,9 @@ var userSchema = new mongoose.Schema({
     password: String
   }, {
     timestamps: true
-  }, {
-    facebook: {
-        id: String,
-        token: String,
-        email: String,
-        name: String,
-        username: String,
-      }, 
-    }
+  }   
 );
 
-  
   userSchema.methods.comparePassword = function(tryPassword, cb) {
     bcrypt.compare(tryPassword, this.password, function(err, isMatch) {
       if (err) return cb(err);
@@ -44,6 +35,4 @@ var userSchema = new mongoose.Schema({
     })
   })
   
-  
-  module.exports = mongoose.model('User', userSchema);
-  
+module.exports = mongoose.model('User', userSchema);

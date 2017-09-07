@@ -6,8 +6,7 @@ import Event from '../Event/Event';
 const  EventsList = (props) => {
     return (
         <div className='EventsList'>
-            <h3> Events Lists </h3>
-        <Event />  < br/> EVENT ONE
+        <Event />  EVENT ONE
         -----
         <Event /> EVENT TWO
         -----

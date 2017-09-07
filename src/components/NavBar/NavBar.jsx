@@ -12,7 +12,6 @@ const NavBar = (props) => {
       <Link to='/resources' className='NavBar-link'>RESOURCES</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to="" className='NavBar-link' onClick={props.handleLogout} >LOG OUT</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     </div>
     :
     <div>

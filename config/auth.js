@@ -1,6 +1,6 @@
 var User = require('../models/user');
 var jwt = require('jsonwebtoken');
-var SECRET = process.env.secret 
+var SECRET = process.env.SECRET; 
 
 
 module.exports = function(req, res, next) {
@@ -11,6 +11,8 @@ module.exports = function(req, res, next) {
             if (!err) {
                 req.user = decoded.user;
                 next();
+            } else {
+                next(err);
             }
         });
     } else {

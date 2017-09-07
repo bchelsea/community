@@ -2,15 +2,21 @@
     list-style-type: none;
     text-align: left;
     display: block;
-    float: left;
+    /* float: left;  */
+    line-height: 30px;
 }
 
+.TopicItem:hover {
+    text-decoration: underline;
+}
 .TopicBox {
     background-color: gray;
-    /* margin: 10px; */
+    margin: 10px;
     border: 1px solid black
 }
 
 .pre-scrollable {
     text-align: center;
+    padding: 0;
 }
+

@@ -9,9 +9,10 @@ import ProfilePage from '../ProfilePage/ProfilePage.js';
 import ResourcesPage from '../ResourcesPage/ResourcesPage.js';
 // import {Link} from 'react-router-dom';
 import MainPage from '../MainPage/MainPage.js';
-
-
-
+import NavBar from '../../components/NavBar/NavBar'
+import SignupPage from '../SignupPage/SignupPage';
+import LoginPage from '../LoginPage/LoginPage';
+import userService from '../../utils/userService';
 
 class App extends Component {
   constructor(props) {
@@ -20,19 +21,49 @@ class App extends Component {
 
   getInitialState() {
     return {
-
     }
-
   }
+
+
+
+
+  handleLogout = () => {
+    userService.logout();
+    this.setState({user: null});
+    }
+  
+    handleSignup = () => {
+      this.setState({user: userService.getUser()});
+    }
+  
+    handleLogin = () => {
+      this.setState({user: userService.getUser()});
+    }
+  
+
+
+// lifecycle method // 
+componentDidMount() {
+  let user = userService.getUser();
+  this.setState({user});
+}
+
+
+
 
   render() {
     return (
       <div>
-        <header className='header-footer'> --- Community Header ---- </header>
+        <header className='header-footer'> 
+          --- Community Header ---- 
+        </header>
+        <NavBar />
         <Router>
           <Switch>
             <Route exact path='/' render={() =>
               <MainPage 
+              handleLogout={this.handleLogout}
+              user={this.state.user}
               />
             } />
             <Route exact path='/profile' render={() =>
@@ -43,6 +74,18 @@ class App extends Component {
               <ResourcesPage
               />
             } />
+            <Route exact path='/signup' render={(props) => 
+              <SignupPage 
+                {...props}
+                handleSignup={this.handleSignup}
+              />
+            }/>
+            <Route exact path='/login' render={(props) => 
+              <LoginPage
+                {...props}
+                handleLogin={this.handleLogin}
+              />
+            }/>
           </Switch>
         </Router>
         

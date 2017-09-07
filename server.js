@@ -2,6 +2,7 @@ var express = require('express');
 var path = reuire('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
+var bodyParser = require('body-parser');
 require('dotenv').config();
 var session = require('express-session');
 var passport = require('passport');
@@ -29,9 +30,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
 
-
+app.use(require('.config/auth'));
 
 //api routes before catch alll 
+app.use('/api/users', require('./routes/api/users'));
+
 app.use('/api', require('./routes/api'));
 
 

@@ -1,5 +1,5 @@
 var mongoose =require('mongoose');
-mongoose.Promise = Promise;
+mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_URL);
 
 mongoose.connection.once('open', () => {
@@ -10,5 +10,4 @@ mongoose.connection.once('error', (err) => {
     console.log(`database error:\n${err}` )
 });
 
-module.exports = mongoose;
 

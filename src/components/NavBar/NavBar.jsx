@@ -4,15 +4,27 @@ import './NavBar.css';
 
 
 const NavBar = (props) => {
+    let nav = props.user ? 
  
-
-  return (
-    <div className='NavBar'>
+    <div>
       <Link to ='/profile' className='NavBar-link'> PROFILE </Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to='/resources' className='NavBar-link'>RESOURCES</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <a href="/resources" class="btn btn-primary"><span class="fa fa-facebook"></span>Sign In With Facebook</a>
+      <Link to="" className='NavBar-link' onClick={props.handleLogout} >LOG OUT</Link>
+      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    </div>
+    :
+    <div>
+      <Link to="/login" className='NavBar-link'>LOG IN</Link>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <Link to="/signup" className='NavBar-link'>SIGN UP</Link>
+    </div>;
+
+
+  return (
+    <div className='NavBar'>
+      {nav}
     </div>
   );
 };

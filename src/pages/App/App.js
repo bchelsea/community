@@ -9,7 +9,7 @@ import ProfilePage from '../ProfilePage/ProfilePage.js';
 import ResourcesPage from '../ResourcesPage/ResourcesPage.js';
 // import {Link} from 'react-router-dom';
 import MainPage from '../MainPage/MainPage.js';
-import NavBar from '../../components/NavBar/NavBar'
+
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
@@ -57,13 +57,11 @@ componentDidMount() {
         <header className='header-footer'> 
           --- Community Header ---- 
         </header>
-        <NavBar />
         <Router>
           <Switch>
             <Route exact path='/' render={() =>
               <MainPage 
-              handleLogout={this.handleLogout}
-              user={this.state.user}
+              
               />
             } />
             <Route exact path='/profile' render={() =>

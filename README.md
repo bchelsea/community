@@ -20,6 +20,16 @@ A simple, user friendly website for all things going on in your neighborhood! Fi
  <h4>this next portion walks you through the simple ui of the Community Website.</h4>
 
 
+<center><b>
+
+[CLICK ME TO VIEW TRELLO](https://trello.com/b/9FuY59fd/community)
+
+
+[CLICK ME TO VIEW COMMUNITY  WEBSITE](https://radiant-brook-29903.herokuapp.com/)
+
+</b></center>
+
+
 
 - Main Page:
     - Main Page will show a simple UI, a scrolling view of discussions, that can be sorted via categories on the left hand side. There is also a map of the city down below.
@@ -42,24 +52,7 @@ A simple, user friendly website for all things going on in your neighborhood! Fi
     <img src="Read-Me-Images/profilepage.png">
 </h5>
 
-1. Go to Emoji Slot Machine URL
-    - [CLICK ME](https://bchelsea.github.io/Slot-Machine/)
-    - Your total Money Won will begin at $500
-
-2. Click flashing handle on the right hand side to start Emoji Slot Machine
-    -  When combination appears:
-       - If a Three of A Kind combination you will be notified on the slot machine screen and your total money won will be updated.
-       - If a Two of A Kind combination you will not be notified on the slot machine screen and your total money won will be updated.
-       - If a No Match combination you will not be notified on the slot machine screen and your total money won will be updated.
-    - Repeat process until you become a billionaire or you run out of Money Won.
-
-3. If your Total Money Won hits 0 or below:
-    - It is **<u>GAME OVER</u>**. You will be notified on the slot machine screen that your are out of cash and you will be prompted to click <b>NEW GAME</b>
-        - when **NEW GAME** button is clicked, your total Money Won is reset to the starting $500 and you are then able to start playing **Emoji Slot Machine** again.
-4. Click NEW GAME
-    - NEW GAME button allows your total Money Won.. or lost (tehe) to be reset too the starting $500 amount. 
-
-
+ 
 ---
 ---
 

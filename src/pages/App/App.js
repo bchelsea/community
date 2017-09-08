@@ -55,11 +55,6 @@ componentDidMount() {
     .then(data => this.setState({discussions: data}))
 }
 
-// method: 'POST',
-// headers: new Headers({
-//   'Content-Type': 'application/json',
-//   'Authorization': 'Bearer ' + tokenService.getToken()
-// }),
 
 
 

@@ -1,9 +1,10 @@
-.resources-page .pre-scrollable{
+/* .resources-page .pre-scrollable{
     width: 800px;
-}
+} */
 
 .ResourcesPage {
     width: 800px;
+    margin-left: 295px;
 }
 
 .pre-scrollable .ResourcesPage {
@@ -13,12 +14,13 @@
 }
 
 .events-label {
-    width: 400px;
+    width: 600px;
+    height: 40px;
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: 360px;
-    margin-left: 510px;
+    margin-top: 380px;
+    margin-left: 400px;
     color: white;
     font-size: 25px;
     background-color: rgba(18, 78, 197, 0.66);
@@ -28,9 +30,11 @@
 .btn-default {
     font-size: 10px;
     text-align: center;
+    width: 100px;
     background-color: rgba(18, 78, 197, 0.66);
-    margin-left: 600px;
-    margin-top: 70px;
+    margin-left: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 
 }

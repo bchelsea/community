@@ -5,3 +5,13 @@
     flex-direction: column;
 }
 
+.event-title {
+    color: white;
+    font-size: 25px;
+    width: 500px;
+    text-align: center;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
+    margin-left: 150px;
+
+}

@@ -7,8 +7,9 @@ import EventsList from '../../components/EventsList/EventsList.js';
 
 const ResourcesPage = (props, context) => {
     return (
+    <div>
+        <h5 className='events-label'>Upcoming Events in Whittier </h5>
         <div className='ResourcesPage'>
-            <h5 className='events-label'>Upcoming Events in Whittier </h5>
             <div className="pre-scrollable resources-page"> 
             <EventsList />
             </div>
@@ -18,6 +19,7 @@ const ResourcesPage = (props, context) => {
             <Link className='Settings-cancel btn btn-default back-home' to='/'>Back to Home</Link>
             </div>
         </div>
+    </div>
     )
 }
 

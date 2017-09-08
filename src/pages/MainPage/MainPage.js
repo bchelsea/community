@@ -3,7 +3,8 @@ import Topics from '../../components/Topics/Topics.js';
 import Map from '../../components/Map/Map';
 import Twitter from '../../components/Twitter/Twitter';
 import './MainPage.css'
-import Discussions from '../../components/Discussions/Discussions'
+import Discussions from '../../components/Discussions/Discussions';
+
 
 
 class MainPage extends Component {
@@ -23,19 +24,15 @@ class MainPage extends Component {
             <div>
                 <div className="MainPage">
                 <Topics handleFilterChange={this.handleFilterChange}/>
-            
                 <Discussions
                     discussions={this.state.filter ?
                         this.props.discussions.filter(d => d.category === this.state.filter)
                         : this.props.discussions}
                     handleNewDiscussion={this.props.handleNewDiscussion}
                 />
-                
                 </div>
                 <Twitter />
-
-                <Map />
-                
+                <Map /> 
             </div>
         );
     }

@@ -1,0 +1,17 @@
+.discussion-header2 {
+    color: white;
+    font-size: 25px;
+    width: 200px;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
+
+}
+
+.discussion-form {
+    width: 500px;
+}
+
+.small-form {
+    display: flex;
+    flex-direction: column;
+}

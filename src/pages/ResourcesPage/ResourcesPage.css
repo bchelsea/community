@@ -6,8 +6,10 @@
     width: 800px;
 }
 
-.pre-scrollable {
+.pre-scrollable .ResourcesPage {
     width: 800px;
+    margin-left: 295px;
+    margin-top: 30px;
 }
 
 .events-label {
@@ -15,5 +17,20 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 360px;
+    margin-left: 510px;
+    color: white;
+    font-size: 25px;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
+}
+
+.btn-default {
+    font-size: 10px;
+    text-align: center;
+    background-color: rgba(18, 78, 197, 0.66);
+    margin-left: 600px;
+    margin-top: 70px;
+    
+
 }

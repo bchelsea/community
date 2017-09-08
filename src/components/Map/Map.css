@@ -1,8 +1,16 @@
 .Map-Box {
     margin-top: 40px;
+    margin-left: 50px;
 }
 
-h4 {
-    color: navy;
+
+.map-header {
+    margin-left: 75px;
+    color: white;
     font-size: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
+    margin-bottom: 10px;
 }

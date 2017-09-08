@@ -8,6 +8,7 @@
 
 .TopicItem:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 .TopicBox {
     margin: 10px;

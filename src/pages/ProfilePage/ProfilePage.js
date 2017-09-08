@@ -1,16 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import NavBar from '../../components/NavBar/NavBar.jsx';
+import './ProfilePage.css';
 
 const ProfilePage = (props) => {
     return (
     <div>
-        <NavBar /> 
-        <div className="ProfilePage">
-            this is the profile page
-        </div>
         <div>
-        <Link className='Settings-cancel btn btn-default btn-sm' to='/'>back to home</Link>
+        <Link className='Settings-cancel btn btn-primary back-home' to='/'>back to home</Link>
       </div>
     </div>
     )

@@ -8,7 +8,8 @@ class NewDiscussion extends Component {
     this.state = {
       category: 'Garage Sales',
       title: '',
-      content: ''
+      content: '',
+      name: ''
     }
   }
 
@@ -17,6 +18,15 @@ class NewDiscussion extends Component {
       [field]: e.target.value
     })
   }
+
+//trying to clear the form after submit //
+
+  // clearInput = (field, e) => {
+  //   this.setState({ 
+  //     [field]: e.target.value
+  //   })
+  // }
+
 
   submitDiscussion = (e) => {
     e.preventDefault();
@@ -39,8 +49,11 @@ class NewDiscussion extends Component {
 
   render() {
     return (
-      <div>
-        <form>
+      <div className='discussion-form'>
+        <br/>
+        <br/>
+        <form className="small-form"> 
+        <h4 className='discussion-header2'> Care to Share ?</h4>
           <div className="form-group">
             <label htmlFor="exampleSelect1">Post To:</label> <br/>
             <select className="form-control" id="exampleSelect1" value={this.state.category}  onChange={(e) => this.updateInput('category', e)}>
@@ -57,12 +70,12 @@ class NewDiscussion extends Component {
 
           <div className="form-group">
             <label htmlFor="titleInput">Title:</label> <br />
-            <input className="form-control" id="titleInput" value={this.state.title} onChange={(e) => this.updateInput('title', e)}></input>
+            <input className="form-control" id="titleInput" placeholder="Insert Post Title" value={this.state.title} onChange={(e) => this.updateInput('title', e)}></input>
           </div>
 
           <div className="form-group">
             <label htmlFor="exampleTextarea">What's Happening?</label><br/>
-            <textarea className="form-control" id="exampleTextarea" rows="7" value={this.state.content} onChange={(e) => this.updateInput('content', e)}></textarea>
+            <textarea className="form-control" id="exampleTextarea" rows="7" placeholder="Tell your community what is up!" value={this.state.content} onChange={(e) => this.updateInput('content', e)}></textarea>
           </div>
           <button className="btn btn-primary" onClick={this.submitDiscussion}>Submit</button>
         </form>

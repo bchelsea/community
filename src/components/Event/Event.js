@@ -6,13 +6,12 @@ const Event = (props) => {
         width: 800,
         height: 300,
         border: '1px solid black',
-        margin: 'auto'
+  
     };
 
     return (
         <div style={style} >
-            <div className='event-image'>
-            </div>
+            
         </div>
 
     );

@@ -11,14 +11,15 @@ export class MapContainer extends Component {
    
   style = {
     width: '25%',
-    height: '25%',
+    height: '50%',
+    border:  '2px solid navy'
   
   }
 
   render() {
       return (
       <div className='Map-Box'>
-        <h4> City Map </h4>
+        <h4 className='map-header'> City Map </h4>
         <Map
           style={this.style}
           google={this.props.google}

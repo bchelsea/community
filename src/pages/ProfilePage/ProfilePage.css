@@ -2,7 +2,22 @@
     font-size: 10px;
     text-align: center;
     background-color: rgba(18, 78, 197, 0.66);
-    margin-left: 100px;
+    margin-left: 640px;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.profile-text {
     margin-top: 400px;
+    margin-left: 450px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    height: 40px;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
     font-family: 'Raleway', sans-serif;
 }

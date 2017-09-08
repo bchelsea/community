@@ -10,16 +10,20 @@ h3 {
     height: 30px;
     width: 100px;
     text-align: center;
-    
 }
 
-.Discussions {
-    display: flex;
-    
-}
 
 .btn-success {
     height: 30px;
 }
+
+.one-discussion {
+    border: 1px solid black;
+}
+
+.discussion-title {
+    font-size: 30px;
+}
+
 
 

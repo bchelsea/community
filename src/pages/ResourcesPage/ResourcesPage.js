@@ -9,9 +9,10 @@ const ResourcesPage = (props, context) => {
     return (
         <div className='ResourcesPage'>
             <h3> Resources & Events </h3>
-            <ul className="pre-scrollable"> 
+            <h3 className='events-label'>Upcoming Events in Whittier </h3>
+            <div className="pre-scrollable resources-page"> 
             <EventsList />
-            </ul>
+            </div>
             <br /> 
             <br />
             <div>

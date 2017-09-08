@@ -1,0 +1,19 @@
+.resources-page .pre-scrollable{
+    width: 800px;
+}
+
+.ResourcesPage {
+    width: 800px;
+}
+
+.pre-scrollable {
+    width: 800px;
+}
+
+.events-label {
+    width: 400px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+}

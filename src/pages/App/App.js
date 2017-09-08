@@ -18,7 +18,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null
+      user: null,
+      discussions: []
     }
   }
 
@@ -36,6 +37,12 @@ class App extends Component {
   handleLogin = () => {
     this.setState({user: userService.getUser()});
   }
+
+  handleNewDiscussion = (discussion) => {
+    this.setState({
+      discussions: [...this.state.discussions, discussion]
+    })
+  }
   
 
 
@@ -43,8 +50,16 @@ class App extends Component {
 componentDidMount() {
   let user = userService.getUser();
   this.setState({user});
+  fetch('/api/discussions')
+    .then(data => data.json())
+    .then(data => this.setState({discussions: data}))
 }
 
+// method: 'POST',
+// headers: new Headers({
+//   'Content-Type': 'application/json',
+//   'Authorization': 'Bearer ' + tokenService.getToken()
+// }),
 
 
 
@@ -53,10 +68,10 @@ componentDidMount() {
       <div>
         <div className='titleBackground'>
         <h1 className='title'>
-          Community 
+          Community
         </h1>
-        <h2 className='title'>
-        a place for neihbors. 
+        <h2 className='subtitle'>
+        a place for neighbors. 
         </h2>
         </div>
           <NavBar 
@@ -66,7 +81,9 @@ componentDidMount() {
           
           <Switch>
             <Route exact path='/' render={() =>
-              <MainPage 
+              <MainPage
+                discussions={this.state.discussions}
+                handleNewDiscussion={this.handleNewDiscussion}
               />
             } />
             <Route exact path='/profile' render={() =>

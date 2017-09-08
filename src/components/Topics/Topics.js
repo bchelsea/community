@@ -6,7 +6,7 @@ import './Topics.css';
 const Topics = (props) => {
     return (
         <div className='Topics'>
-            <Topic />
+            <Topic handleFilterChange={props.handleFilterChange} />
         </div>
     )
 }

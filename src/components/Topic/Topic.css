@@ -10,25 +10,28 @@
     text-decoration: underline;
 }
 .TopicBox {
-    background-color: white;
     margin: 10px;
     margin-left: 15px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px #888888;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
+    color: white;
 }
 
-.pre-scrollable {
+.pre-scrollable .topic-list {
     text-align: center;
     font-size: 12px;
     padding: 2px;
     width: 150px;
 }
 
-h5 {
-    margin-left: 18px;
-    color: navy;
+.community-topic {
+    margin-left: 16px;
+    color: white;
     font-size: 15px;
     width: 145px;
-    box-shadow: 5px 5px 5px #888888;
     text-align: center;
+    background-color: rgba(18, 78, 197, 0.66);
+    box-shadow: 3px 3px 2px navy;
 }

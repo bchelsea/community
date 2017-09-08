@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Topics from '../../components/Topics/Topics.js';
 import Map from '../../components/Map/Map';
 import Twitter from '../../components/Twitter/Twitter';
@@ -6,22 +6,39 @@ import Twitter from '../../components/Twitter/Twitter';
 import Discussions from '../../components/Discussions/Discussions'
 
 
-const MainPage = (props) => {
-    return (
-    <div>
-        <div className="MainPage">
-        <Topics />
+class MainPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            filter: ''
+        }
+    }
+
+    handleFilterChange = (filter) => {
+        this.setState({filter});
+    }
     
-        <Discussions />
-        
-        </div>
-        <Twitter />
+    render() {
+        return (
+            <div>
+                <div className="MainPage">
+                <Topics handleFilterChange={this.handleFilterChange}/>
+            
+                <Discussions
+                    discussions={this.state.filter ?
+                        this.props.discussions.filter(d => d.category === this.state.filter)
+                        : this.props.discussions}
+                    handleNewDiscussion={this.props.handleNewDiscussion}
+                />
+                
+                </div>
+                <Twitter />
 
-        <Map />
-        
-</div>
-
-    )
+                <Map />
+                
+            </div>
+        );
+    }
 
 }
 

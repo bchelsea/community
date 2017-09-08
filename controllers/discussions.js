@@ -10,7 +10,9 @@ function create(req, res) {
 }
 
 function index(req, res) {
-    res.send('hit index');
+    Discussion.find({}, function (err, data){
+        res.status(200).json(data)
+    })
 }
 
 

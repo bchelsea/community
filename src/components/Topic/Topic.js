@@ -10,21 +10,22 @@ const TopicBox = (props) => {
     };
     return (
     <div>
-            <h5> Community Topics</h5>
+            <h5 className='community-topic'>Community Topics</h5>
             <div
             className='TopicBox' 
             style={style}
             >
-                <ul className="pre-scrollable"> 
-                    <li className='TopicItem'><a href="">Garage Sales</a></li>
-                    <li className='TopicItem'> Lost and Found</li>
-                    <li className='TopicItem'> Neighborhood Watch</li>
-                    <li className='TopicItem'> Crime</li>
-                    <li className='TopicItem'> Moving to Whittier</li>
-                    <li className='TopicItem'> Community Events</li>
-                    <li className='TopicItem'> Good Eats</li>
-                    <li className='TopicItem'> High Schools</li>
-                    <li className='TopicItem'> Random</li>
+                <ul className="pre-scrollable topic-list"> 
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('')}>View All Discussions</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Garage Sales')}>Garage Sales</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Lost And Found')}> Lost and Found</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Neighborhood Watch')}> Neighborhood Watch</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Crime')}> Crime</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Moving to Whittier')}> Moving to Whittier</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Community Events')}> Community Events</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Good Eats')}> Good Eats</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('High School')}> High Schools</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Random')}> Random</li>
                 </ul>
             </div>
     </div>

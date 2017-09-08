@@ -5,8 +5,9 @@ import Event from '../Event/Event';
 
 const  EventsList = (props) => {
     return (
+        
         <div className='EventsList'>
-        <Event />  EVENT ONE
+        EVENT 1 <br /> <Event /> 
         -----
         <Event /> EVENT TWO
         -----
@@ -19,6 +20,7 @@ const  EventsList = (props) => {
         <Event /> EVENT SIX
         -----
         </div>
+
     )
 }
 

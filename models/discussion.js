@@ -8,7 +8,7 @@ var discussionSchema = new mongoose.Schema ({
     content: String,
     category: {type: String, enum:['Crime', 'Garage Sales', 'Lost And Found', 'Community Events', 'Neighborhood Watch', 'Good Eats', 'High School']}
 }, {
-    timestamps: true,
+    timestamps: true
 })
 
 

@@ -9,16 +9,30 @@
   margin: 50px;
 }
 
-
+.title {
+  font-size: 50px;
+  margin-left: 25px;
+  color: white;
+}
+.subtitle {
+  font-size: 30px;
+  margin-left: 25px;
+  color: white;
+  text-align: right;
+}
 
 
 .titleBackground {
-  text-align: right;
+  text-align: left;
   margin-right: 100px;
-  margin-top: 100px;
-  width: 300px;
+  margin-top: 50px;
+  margin-left: 25px;
+  width: 400px;
   height: 100px;
-  float: right;
+  float: left;
+  background-color: rgba(18, 78, 197, 0.66);
+  box-shadow: 3px 3px 2px navy;
+
 }
 
 

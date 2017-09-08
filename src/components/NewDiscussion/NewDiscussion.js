@@ -6,9 +6,9 @@ class NewDiscussion extends Component {
   constructor() {
     super();
     this.state = {
-      category: 'High School',
-      title: 'title',
-      content: 'this is the content'
+      category: 'Garage Sales',
+      title: '',
+      content: ''
     }
   }
 
@@ -33,10 +33,7 @@ class NewDiscussion extends Component {
       console.log('Error');
     })
     .then(discussion => {
-      console.log(discussion);
-      
-      // call a method that was passed via props that
-      // lives where the state.discussions array lives
+      this.props.handleNewDiscussion(discussion);
     });
   }
 

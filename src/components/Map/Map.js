@@ -20,14 +20,15 @@ export class MapContainer extends Component {
       <div className='Map-Box'>
         <h4> City Map </h4>
         <Map
-        style={this.style}
-        google={this.props.google}
-        zoom={12}
-        initialCenter={{
-            lat: 33.979179,
-            lng: -118.032844
-          }}
-        >
+          style={this.style}
+          google={this.props.google}
+          zoom={12}
+          clickableIcons={false}
+          initialCenter={{
+              lat: 33.979179,
+              lng: -118.032844
+            }}
+          >
         </Map>
       </div>
       );

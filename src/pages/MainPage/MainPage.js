@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Topics from '../../components/Topics/Topics.js';
 import Map from '../../components/Map/Map';
 import Twitter from '../../components/Twitter/Twitter';
-
+import './MainPage.css'
 import Discussions from '../../components/Discussions/Discussions'
 
 

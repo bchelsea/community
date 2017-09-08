@@ -6,7 +6,7 @@ import NewDiscussion from '../NewDiscussion/NewDiscussion.js';
 const Discussions = (props) => {
     return (
         <div className='Discussions'>
-            <h3> Discussions</h3>< br />
+            <h3 className='discussion-header'> Discussions</h3>< br />
             <div className='NewDiscussion'>
             <NewDiscussion handleNewDiscussion={props.handleNewDiscussion} />
             { !props.discussions ? 

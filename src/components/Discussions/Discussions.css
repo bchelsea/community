@@ -2,8 +2,7 @@
     width: 300px;
     display: flex;
     flex-flow: column-reverse;
-    margin-left: -200px;
-    margin-top: -100px;
+    
 }
 
 #topic-header {
@@ -38,7 +37,7 @@
     text-align: center;
     background-color: rgba(18, 78, 197, 0.66);
     box-shadow: 3px 3px 2px navy;
-    margin-left: 220px;
+    margin-left: 380px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -64,4 +63,10 @@
     display: flex;
     flex-direction: column-reverse;
     font-family: 'Raleway', sans-serif;
+    margin-left: 150px;
+}
+
+.NewDiscussion {
+    margin-left: -180px;
+    margin-top: -130px;
 }

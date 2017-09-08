@@ -10,9 +10,12 @@ export class MapContainer extends Component {
   }
    
   style = {
-    width: '25%',
+    width: '75%',
     height: '50%',
-    border:  '2px solid navy'
+    border:  '2px solid navy',
+    position: 'absolute',
+    marginLeft: 150,
+   
   
   }
 

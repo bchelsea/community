@@ -1,6 +1,5 @@
 import React from 'react';
 import './EventsList.css';
-import Event from '../Event/Event';
 
 
 const  EventsList = (props) => {
@@ -12,7 +11,7 @@ const  EventsList = (props) => {
         <b>When:</b> Friday, Sept 23rd @8:30pm<br/>
         <b>Where:</b> Dragon Lounge, Whittier Ca.<br/>
         </p>
-        <img src={'https://i.imgur.com/AIeKGLV.jpg'} />
+        <img src={'https://i.imgur.com/AIeKGLV.jpg'} alt=''/>
         <br /> 
       
         <h3 className='event-title'>Wine And Women: A Drinking Event </h3>
@@ -21,7 +20,7 @@ const  EventsList = (props) => {
         <b>When:</b> Every Wednesday in September, @ 6:30pm<br/>
         <b>Where:</b> TotalWine, Whittier Ca.<br/>
         </p>
-        <img src={'https://i.imgur.com/yR7AgUA.jpg'} />
+        <img src={'https://i.imgur.com/yR7AgUA.jpg'} alt='' />
         <br /> 
        
         <h3 className='event-title'>Whittier Art Crawl </h3> 
@@ -30,7 +29,7 @@ const  EventsList = (props) => {
         <b>When:</b> Saturday, Sept 24rd @7:30pm<br/>
         <b>Where:</b> Uptown Whittier, in Front of the Greenleaf Statue.<br/>
         </p>
-        <img src={'https://i.imgur.com/HxGjJjd.jpg'} />
+        <img src={'https://i.imgur.com/HxGjJjd.jpg'} alt='' />
         <br /> 
         
         <h3 className='event-title'>Wedding Planning Event </h3>
@@ -40,7 +39,7 @@ const  EventsList = (props) => {
         <b>When:</b> Aaturday, Oct 2 @3:30pm<br/>
         <b>Where:</b> Whittier Community Center, Whittier Ca.<br/>
         </p>
-        <img src={'https://i.imgur.com/LknFWNx.jpg'} />
+        <img src={'https://i.imgur.com/LknFWNx.jpg'} alt='' />
         <br /> 
   
         <h3 className='event-title'>Battle of the Burger: Los Angeles </h3>
@@ -49,7 +48,7 @@ const  EventsList = (props) => {
         <b>When:</b> Friday, Oct 12rd @2:00pm<br/>
         <b>Where:</b> The Knotted Apron, Whittier Ca.<br/>
         </p>
-        <img src={'https://i.imgur.com/lfOETuh.jpg'} />
+        <img src={'https://i.imgur.com/lfOETuh.jpg'} alt='' />
         <br /> 
        
         <h3 className='event-title'>Metal Hat Making Classes </h3>
@@ -59,7 +58,7 @@ const  EventsList = (props) => {
         <b>When:</b> Friday, Oct 26th @5:30pm<br/>
         <b>Where:</b> Whittier Community Center, Whittier Ca.<br/>
         </p>
-        <img src={'https://i.imgur.com/nFbF5AT.jpg'} />
+        <img src={'https://i.imgur.com/nFbF5AT.jpg'} alt=''/>
         <br /> 
         <h3 className='event-title'>Check Back For More Events Next Week!</h3>
         

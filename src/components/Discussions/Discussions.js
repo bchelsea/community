@@ -8,6 +8,9 @@ const Discussions = (props) => {
     return (
         <div>
             <h3 className='discussion-header1'> Discussions</h3>
+            <br />
+            <br />
+            
             <div className='Discussions pre-scrollable'>
                 { !props.discussions ? 
                 <p>Loading</p> 
@@ -26,7 +29,7 @@ const Discussions = (props) => {
                         {d.content}
                         </h5>
                         <h6>
-                        Posted By: {d.user.name} On {d.createdAt}
+                        Posted By: {d.user} On {d.createdAt}
                         </h6>
                     </div>
                 </div>)}

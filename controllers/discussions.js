@@ -16,7 +16,13 @@ function index(req, res) {
 }
 
 
+function user(req, res) {
+    Discussion.find({}).populate('user').exec(function (err, data){
+})
+}
+
 module.exports = {
     index,
-    create
+    create,
+    user
 }

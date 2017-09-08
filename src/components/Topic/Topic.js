@@ -21,7 +21,7 @@ const TopicBox = (props) => {
                     <li className='TopicItem' onClick={() => props.handleFilterChange('Lost And Found')}> Lost and Found</li>
                     <li className='TopicItem' onClick={() => props.handleFilterChange('Neighborhood Watch')}> Neighborhood Watch</li>
                     <li className='TopicItem' onClick={() => props.handleFilterChange('Crime')}> Crime</li>
-                    <li className='TopicItem' onClick={() => props.handleFilterChange('Moving to Whittier')}> Moving to Whittier</li>
+                    <li className='TopicItem' onClick={() => props.handleFilterChange('Moving')}> Moving to Whittier</li>
                     <li className='TopicItem' onClick={() => props.handleFilterChange('Community Events')}> Community Events</li>
                     <li className='TopicItem' onClick={() => props.handleFilterChange('Good Eats')}> Good Eats</li>
                     <li className='TopicItem' onClick={() => props.handleFilterChange('High School')}> High Schools</li>

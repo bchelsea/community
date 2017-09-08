@@ -65,6 +65,7 @@ class NewDiscussion extends Component {
                 <option value='Neighborhood Watch'>Neighborhood Watch</option>
                 <option value='High School'>High School</option>
                 <option value='Good Eats'>Good Eats</option>
+                <option value='Random'>Random</option>
             </select>
           </div>
 

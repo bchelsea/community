@@ -6,7 +6,7 @@ var discussionSchema = new mongoose.Schema ({
     title: String,
     user: {type: Schema.Types.ObjectId, ref: "User"},
     content: String,
-    category: {type: String, enum:['Crime', 'Garage Sales', 'Lost And Found', 'Community Events', 'Neighborhood Watch', 'Good Eats', 'High School']}
+    category: {type: String, enum:['Crime', 'Garage Sales', 'Lost And Found', 'Community Events', 'Neighborhood Watch', 'Good Eats', 'High School', 'Random', 'Moving to Whittier']}
 }, {
     timestamps: true
 })

@@ -56,8 +56,6 @@ componentDidMount() {
 }
 
 
-
-
   render() {
     return (
       <div>
@@ -77,6 +75,7 @@ componentDidMount() {
           <Switch>
             <Route exact path='/' render={() =>
               <MainPage
+                user={this.state.user}
                 discussions={this.state.discussions}
                 handleNewDiscussion={this.handleNewDiscussion}
               />

@@ -25,6 +25,7 @@ class MainPage extends Component {
                 <div className="MainPage">
                 <Topics handleFilterChange={this.handleFilterChange}/>
                 <Discussions
+                    user={this.props.user}
                     discussions={this.state.filter ?
                         this.props.discussions.filter(d => d.category === this.state.filter)
                         : this.props.discussions}

@@ -10,7 +10,7 @@ const Discussions = (props) => {
             <h3 className='discussion-header1'> Discussions</h3>
             <br />
             <br />
-            
+
             <div className='Discussions pre-scrollable'>
                 { !props.discussions ? 
                 <p>Loading</p> 
@@ -36,11 +36,15 @@ const Discussions = (props) => {
                 </div>
                 }
         </div>
+        { props.user &&
         <div className='NewDiscussion'>
             <div>
-                <NewDiscussion handleNewDiscussion={props.handleNewDiscussion} />
+                <NewDiscussion 
+                user={props.user}
+                handleNewDiscussion={props.handleNewDiscussion} />
             </div>
         </div>
+        }
 
     </div>
     )

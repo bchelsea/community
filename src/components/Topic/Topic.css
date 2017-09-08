@@ -4,6 +4,7 @@
     display: block;
     /* float: left;  */
     line-height: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .TopicItem:hover {
@@ -18,13 +19,15 @@
     background-color: rgba(18, 78, 197, 0.66);
     box-shadow: 3px 3px 2px navy;
     color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
-.pre-scrollable .topic-list {
+.topic-list {
     text-align: center;
     font-size: 12px;
     padding: 2px;
     width: 150px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .community-topic {
@@ -35,5 +38,6 @@
     text-align: center;
     background-color: rgba(18, 78, 197, 0.66);
     box-shadow: 3px 3px 2px navy;
+    font-family: 'Raleway', sans-serif;
 }
 

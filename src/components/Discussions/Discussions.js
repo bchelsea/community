@@ -22,9 +22,10 @@ const Discussions = (props) => {
                         <h4 className='discussion-title'>
                         {d.title}
                         </h4>
-                        <h4 className='topic-header'>
+                        
+                        <h4 className='topic-header'></h4>
                         <h4 id='topic-header'>Topic: {d.category}</h4>
-                        </h4>
+                        
                         <h5 className='discussion-content'>
                         {d.content}
                         </h5>
